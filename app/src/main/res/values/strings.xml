@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Guess the number</string>
+    <string name="menu_background">menu_background</string>
+    <string name="main_label">Menu</string>
+    <string name="btn_exit">btn_exit</string>
+    <string name="btn_start">btn_start</string>
+    <string name="number">Number</string>
+    <string name="guess_text">Number from 1 to 100</string>
+    <string name="check">Check</string>
+    <string name="first_text">Can you guess?</string>
 </resources>

@@ -4,15 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:contentDescription="@string/menu_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/label_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp100"
+            android:fontFamily="monospace"
+            android:padding="@dimen/dp5"
+            android:text="@string/main_label"
+            android:textAlignment="center"
+            android:textColor="@color/yellow"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/button_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp70"
+            android:layout_marginEnd="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp15"
+            android:clickable="true"
+            android:contentDescription="@string/btn_start"
+            android:focusable="true"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/button_start" />
+
+        <ImageView
+            android:id="@+id/button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp15"
+            android:clickable="true"
+            android:contentDescription="@string/btn_exit"
+            android:focusable="true"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/button_exit" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
