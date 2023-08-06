@@ -25,4 +25,7 @@
     <dimen name="dp18">18dp</dimen>
     <dimen name="dp12">12dp</dimen>
     <dimen name="dp180">180dp</dimen>
+    <dimen name="dp320">320dp</dimen>
+    <dimen name="dp575">575dp</dimen>
+    <dimen name="dp120">120dp</dimen>
 </resources>

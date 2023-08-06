@@ -8,4 +8,11 @@
     <string name="guess_text">Number from 1 to 100</string>
     <string name="check">Check</string>
     <string name="first_text">Can you guess?</string>
+    <string name="result">Result</string>
+    <string name="greater_number_message">Загадане число більше</string>
+    <string name="smaller_number_message">Загадане число менше</string>
+    <string name="enter_number_message">Введіть число</string>
+    <string name="resultGame">Result Game</string>
+    <string name="congratulations_message">Вітаємо! Ви вгадали число %1$d за %2$d спроб</string>
+    <string name="count_guess_number">Ви вгадали число за %1$d спроб</string>
 </resources>
