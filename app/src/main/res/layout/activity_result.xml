@@ -11,9 +11,9 @@
         android:id="@+id/firstSection"
         android:layout_width="@dimen/dp320"
         android:layout_height="@dimen/dp575"
-        android:layout_marginTop="@dimen/dp50"
         android:alpha="0.9"
         android:background="@drawable/section_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

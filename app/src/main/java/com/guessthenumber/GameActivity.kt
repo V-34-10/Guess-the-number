@@ -22,7 +22,7 @@ class GameActivity : AppCompatActivity() {
     private fun clickButton() {
         secretNumber = Random.nextInt(1, 101)
         val alphaAnimation = AlphaAnimation(1.0f, 0.0f)
-        alphaAnimation.duration = 2000
+        alphaAnimation.duration = 1500
         checkButton.setOnClickListener {
             val input = number_edit.text.toString().toIntOrNull()
             checkButton.startAnimation(alphaAnimation)
@@ -51,5 +51,13 @@ class GameActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+    }
+
+    @Deprecated(
+        "Deprecated in Java",
+        ReplaceWith("super.onBackPressed()", "androidx.appcompat.app.AppCompatActivity")
+    )
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 }

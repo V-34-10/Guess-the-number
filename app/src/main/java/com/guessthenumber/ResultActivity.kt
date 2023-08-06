@@ -15,7 +15,7 @@ class ResultActivity : AppCompatActivity() {
 
     private fun getResult() {
         val alphaAnimation = AlphaAnimation(1.0f, 0.0f)
-        alphaAnimation.duration = 2000
+        alphaAnimation.duration = 1500
         val attempts = intent.getIntExtra("attempts", 0)
         val message = getString(R.string.count_guess_number, attempts)
         resultTextView.text = message
@@ -25,5 +25,13 @@ class ResultActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+    }
+
+    @Deprecated(
+        "Deprecated in Java",
+        ReplaceWith("super.onBackPressed()", "androidx.appcompat.app.AppCompatActivity")
+    )
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 }

@@ -28,4 +28,5 @@
     <dimen name="dp320">320dp</dimen>
     <dimen name="dp575">575dp</dimen>
     <dimen name="dp120">120dp</dimen>
+    <dimen name="dp250">250dp</dimen>
 </resources>

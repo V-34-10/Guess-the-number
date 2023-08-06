@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun clickButton() {
         val alphaAnimation = AlphaAnimation(1.0f, 0.0f)
-        alphaAnimation.duration = 2000
+        alphaAnimation.duration = 1500
         button_start.setOnClickListener {
             val intent = Intent(this, GameActivity::class.java)
             startActivity(intent)
