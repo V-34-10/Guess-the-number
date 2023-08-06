@@ -20,11 +20,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, GameActivity::class.java)
             startActivity(intent)
             button_start.startAnimation(alphaAnimation)
-            finish()
         }
         button_exit.setOnClickListener {
             button_exit.startAnimation(alphaAnimation)
-            finish()
+            finishAffinity()
         }
     }
 
@@ -35,5 +34,4 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
     }
-
 }

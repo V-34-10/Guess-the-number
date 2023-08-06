@@ -49,7 +49,6 @@ class GameActivity : AppCompatActivity() {
             val intent = Intent(this, ResultActivity::class.java)
             intent.putExtra("attempts", attempts)
             startActivity(intent)
-            finish()
         }
     }
 
