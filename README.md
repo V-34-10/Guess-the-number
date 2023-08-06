@@ -15,4 +15,4 @@ The "Return to menu" button takes the user back to the first screen to start a n
 
 Overall, this task requires creating three screens with different functionalities for a simple game.
 
-[(Download test version)]([https://github.com/V-34-10/Guess-the-number/blob/master/Guess_the_number.apk])
+[(Download test version)][https://github.com/V-34-10/Guess-the-number/blob/master/Guess_the_number.apk]
