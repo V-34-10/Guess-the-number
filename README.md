@@ -1,6 +1,6 @@
 # Guess-the-number
 
-This is a test task for an Android Developer position, requiring the creation of three screens for a simple game. 
+This is a test task for an Junior Android Developer position on Boosta, requiring the creation of three screens for a simple game.
 
 Screen 1 is the menu screen, displaying a title and two buttons. 
 The "Start game" button redirects the user to the second screen, which is the game screen. 
